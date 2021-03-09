@@ -14,9 +14,9 @@ import io.appium.java_client.remote.MobileCapabilityType;
  * Hello world!
  *
  */
-public class App 
+public class Base 
 {
-    public static void main( String[] args ) throws MalformedURLException
+    public static AndroidDriver<AndroidElement> Capabilities() throws MalformedURLException
     
     {
     	File f = new File("src/main/java");
@@ -31,6 +31,7 @@ public class App
         
         AndroidDriver<AndroidElement> driver= new AndroidDriver<AndroidElement>(new URL("http://127.0.0.1:4723/wd/hub"),cap);
         
+        return driver;
     
         
     }
