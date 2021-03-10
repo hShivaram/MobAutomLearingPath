@@ -17,6 +17,7 @@ public class Basics extends Base {
 		
 		driver.findElement(By.xpath("//android.widget.TextView[@text='Preference']")).click();
 		
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		
 		
 	}
